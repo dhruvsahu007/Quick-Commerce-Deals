@@ -1,6 +1,9 @@
 # Quick Commerce Price Comparison App 🛒
 
-A Streamlit-based application that helps you compare prices across popular quick commerce platforms (Zepto, Blinkit, and Swiggy Instamart) using natural language queries powered by OpenAI.
+A Streamlit-based application that helps you compare prices across popular quick commerce platforms (Zepto, Blinkit, and Swiggy Instamart) using natural language queries powered by LangChain SQL agents and OpenAI.
+
+## 🌟 Live Repository
+**GitHub:** [https://github.com/dhruvsahu007/Quick-Commerce-Deals](https://github.com/dhruvsahu007/Quick-Commerce-Deals)
 
 ## Features ✨
 
@@ -32,6 +35,13 @@ quick_commerce_deals/
 
 ## Setup Instructions 🚀
 
+### 0. Clone the Repository
+
+```bash
+git clone https://github.com/dhruvsahu007/Quick-Commerce-Deals.git
+cd Quick-Commerce-Deals
+```
+
 ### 1. Install Dependencies
 
 ```bash
@@ -41,7 +51,11 @@ pip install -r requirements.txt
 ### 2. Configure OpenAI API Key
 
 1. Get your OpenAI API key from [OpenAI Platform](https://platform.openai.com/api-keys)
-2. Update the `.env` file:
+2. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+3. Update the `.env` file with your actual API key:
    ```env
    OPENAI_API_KEY=your_actual_openai_api_key_here
    ```
